@@ -2,3 +2,83 @@
  * @description Styles
  * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
+
+:root {
+    --primary-color   : #f2eff8;
+    --background-color: #333;
+}
+
+body {
+    margin          : 0;
+    background-color: var(--background-color);
+    color           : var(--primary-color);
+}
+
+.scene, .scene div {
+    transform-style: preserve-3d;
+    position       : absolute;
+}
+
+.scene {
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%) rotateX(65deg) rotateZ(45deg);
+}
+
+.scene__cube {
+    --cube-color : #f2eff8;
+    --cube-width : 200px;
+    --cube-height: 200px;
+    --cube-depth : 200px;
+}
+
+.scene__cube {
+    width    : var(--cube-depth);
+    height   : var(--cube-height);
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scene__cube-side {
+    width           : var(--cube-depth);
+    height          : var(--cube-height);
+    background-color: var(--cube-color);
+}
+
+.scene__cube-side--front {
+    width           : var(--cube-height);
+    height          : var(--cube-width);
+    transform       : rotateY(90deg);
+    transform-origin: right center;
+    background-color: color-mix(in display-p3, var(--cube-color) 50%, var(--background-color));
+}
+
+.scene__cube-side--back {
+    width           : var(--cube-height);
+    height          : var(--cube-width);
+    transform       : rotateY(-90deg);
+    transform-origin: left center;
+    background-color: color-mix(in display-p3, var(--cube-color) 60%, var(--background-color));
+}
+
+.scene__cube-side--right {
+    width           : var(--cube-depth);
+    height          : var(--cube-height);
+    transform       : rotateX(90deg);
+    transform-origin: top center;
+    background-color: color-mix(in display-p3, var(--cube-color) 40%, var(--background-color));
+}
+
+.scene__cube-side--left {
+    width           : var(--cube-depth);
+    height          : var(--cube-height);
+    transform       : rotateX(-90deg);
+    transform-origin: bottom center;
+    background-color: color-mix(in display-p3, var(--cube-color) 70%, var(--background-color));
+}
+
+.scene__cube-side--top {
+    transform       : translateZ(var(--cube-height));
+    background-color: color-mix(in display-p3, var(--cube-color) 80%, var(--background-color));
+}
