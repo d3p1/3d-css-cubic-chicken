@@ -4,3 +4,138 @@
  */
 
 @import url("utils/3d.css");
+
+.chicken {
+    font-size: 15px;
+}
+
+.chicken__head {
+    --cube-color : #f2eff8;
+    --cube-width : 10em;
+    --cube-height: 10em;
+    --cube-depth : 10em;
+}
+
+.chicken__eye {
+    --cube-color : #000000;
+    --cube-width : 1em;
+    --cube-height: 1em;
+    --cube-depth : .5em;
+}
+
+.chicken__eye--right {
+    transform: translate3d(10em, 6em, 7em);
+}
+
+.chicken__eye--left {
+    transform: translate3d(-.5em, 6em, 7em);
+}
+
+.chicken__beak {
+    --cube-color : #ff4b00;
+    --cube-width : 3em;
+    --cube-height: 2em;
+    --cube-depth : 2em;
+    transform    : translate3d(5em, 10em, 5em);
+}
+
+.chicken__wattle {
+    --cube-color : #e71010;
+    --cube-width : 2em;
+    --cube-height: 2em;
+    --cube-depth : 2em;
+    transform    : translate3d(5em, 10em, 3em);
+}
+
+.chicken__comb {
+    --cube-color : #e71010;
+    --cube-width : 5em;
+    --cube-height: 3em;
+    --cube-depth : 3em;
+    transform    : translate3d(4em, 3em, 10em);
+}
+
+.chicken__body {
+    --cube-color : #f2eff8;
+    --cube-width : 15em;
+    --cube-height: 12em;
+    --cube-depth : 10em;
+    transform    : translate3d(0em, -5em, -10em);
+}
+
+.chicken__tail {
+    --cube-color : #f2eff8;
+    --cube-width : 5em;
+    --cube-height: 9em;
+    --cube-depth : 5em;
+    transform    : translate3d(3em, -9em, -8em);
+}
+
+.chicken__wing {
+    --cube-color : #f2eff8;
+    --cube-width : 11em;
+    --cube-height: 6em;
+    --cube-depth : 3em;
+}
+
+.chicken__wing--right {
+    transform: translate3d(-3em, -3em, -8em);
+}
+
+.chicken__wing--left {
+    transform: translate3d(10em, -3em, -8em);
+}
+
+.chicken__knee {
+    --cube-color : #ff4b00;
+    --cube-width : 2em;
+    --cube-height: 6em;
+    --cube-depth : 2em;
+}
+
+.chicken__knee--right {
+    transform: translate3d(2em, 5em, -15em);
+}
+
+.chicken__knee--left {
+    transform: translate3d(7em, 5em, -15em);
+}
+
+.chicken__foot {
+    --cube-color : #ff4b00;
+    --cube-width : 5em;
+    --cube-height: 2em;
+    --cube-depth : 4em;
+}
+
+.chicken__foot--right {
+    transform: translate3d(1em, 5em, -16em);
+}
+
+.chicken__foot--left {
+    transform: translate3d(6em, 5em, -16em);
+}
+
+.chicken__finger {
+    --cube-color : #ff4b00;
+    --cube-width : 3em;
+    --cube-height: 2em;
+    --cube-depth : 1em;
+}
+
+.chicken__finger--1 {
+    transform: translate3d(1em, 10em, -16em);
+}
+
+.chicken__finger--2 {
+    transform: translate3d(4em, 10em, -16em);
+}
+
+.chicken__finger--3 {
+    transform: translate3d(6em, 10em, -16em);
+}
+
+.chicken__finger--4 {
+    transform: translate3d(9em, 10em, -16em);
+}
+
