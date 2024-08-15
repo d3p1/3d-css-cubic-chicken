@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/d3p1/3d-css-cubic-chicken/compare/v1.2.0...v1.3.0) (2024-08-15)
+
+
+### Features
+
+* move content to docs folder to be able to expose them using GitHub Pages [[#1](https://github.com/d3p1/3d-css-cubic-chicken/issues/1)] ([838239a](https://github.com/d3p1/3d-css-cubic-chicken/commit/838239ae3bd2281eac4a07070da9b54706539ef7))
+
 # [1.2.0](https://github.com/d3p1/3d-css-cubic-chicken/compare/v1.1.0...v1.2.0) (2024-08-15)
 
 
