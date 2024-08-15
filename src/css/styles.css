@@ -38,44 +38,47 @@ body {
 }
 
 .scene__cube-side {
-    width           : var(--cube-depth);
-    height          : var(--cube-width);
     background-color: var(--cube-color);
 }
 
-.scene__cube-side--back {
+.scene__cube-side--longitudinal {
     width           : var(--cube-height);
     height          : var(--cube-width);
     transform-origin: left center;
     transform       : rotateY(-90deg);
+}
+
+.scene__cube-side--longitudinal-back {
     background-color: color-mix(in display-p3, var(--cube-color) 60%, var(--background-color));
 }
 
-.scene__cube-side--front {
-    width           : var(--cube-height);
-    height          : var(--cube-width);
-    transform-origin: left center;
+.scene__cube-side--longitudinal-front {
     transform       : rotateY(-90deg) translateZ(calc(-1 * var(--cube-depth)));
     background-color: color-mix(in display-p3, var(--cube-color) 50%, var(--background-color));
 }
 
-.scene__cube-side--right {
+.scene__cube-side--lateral {
     width           : var(--cube-depth);
     height          : var(--cube-height);
     transform-origin: top center;
     transform       : rotateX(90deg);
+}
+
+.scene__cube-side--lateral-right {
     background-color: color-mix(in display-p3, var(--cube-color) 40%, var(--background-color));
 }
 
-.scene__cube-side--left {
-    width           : var(--cube-depth);
-    height          : var(--cube-height);
-    transform-origin: top center;
+.scene__cube-side--lateral-left {
     transform       : rotateX(90deg) translateZ(calc(-1 * var(--cube-width)));
     background-color: color-mix(in display-p3, var(--cube-color) 70%, var(--background-color));
 }
 
-.scene__cube-side--top {
+.scene__cube-side--vertical {
+    width : var(--cube-depth);
+    height: var(--cube-width);
+}
+
+.scene__cube-side--vertical-top {
     transform       : translateZ(var(--cube-height));
     background-color: color-mix(in display-p3, var(--cube-color) 80%, var(--background-color));
 }
